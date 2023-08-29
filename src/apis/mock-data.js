@@ -1,7 +1,7 @@
 export const mockData = {
   board: {
     _id: 'board-id-01',
-    title: 'TrungQuanDev MERN Stack Board',
+    title: 'Project Trello App Clone Board',
     description: 'Pro MERN stack Course',
     type: 'public', 
     ownerIds: [], 

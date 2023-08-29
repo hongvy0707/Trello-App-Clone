@@ -3,11 +3,8 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import Divider from '@mui/material/Divider'
-import ListItemText from '@mui/material/ListItemText'
-import ListItemIcon from '@mui/material/ListItemIcon'
+import Typography from '@mui/material/Typography'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import Check from '@mui/icons-material/Check'
 
 function Starred() {
   const [anchorEl, setAnchorEl] = useState(null)
@@ -18,7 +15,7 @@ function Starred() {
   }
 
   const handleClose = () => {
-    setAnchorEl(null)
+    setAnchorEl(null);
   }
 
   return (
@@ -43,35 +40,27 @@ function Starred() {
           'aria-labelledby': 'basic-button-starred'
         }}
       >
-        <MenuItem>
-          <ListItemText inset>Single</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemText inset>1.15</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemText inset>Double</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <Check />
-          </ListItemIcon>
-          Custom: 1.2
-        </MenuItem>
-        <Divider />
-        <MenuItem>
-          <ListItemText>Add space before paragraph</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemText>Add space after paragraph</ListItemText>
-        </MenuItem>
-        <Divider />
-        <MenuItem>
-          <ListItemText>Custom spacing...</ListItemText>
-        </MenuItem>
+       
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+            <img src='https://trello.com/assets/cc47d0a8c646581ccd08.svg' 
+                alt='Starred Image' 
+                style={{ width: '100%', padding: 1}} 
+            />
+            <Typography variant="body1" >Star important boards to access them quickly </Typography>
+            <Typography variant="body2">and easily</Typography>  
+            </Box>
+            <div>
+              
+              
+              
+              
+            </div>
+          </Box>
+
       </Menu>
     </Box>
-  )
+  );
 }
 
-export default Starred
+export default Starred;
